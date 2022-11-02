@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+    <nav id="navbar">
+      <header>
+        <h1>HTML and CSS Documentation</h1>
+      </header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#HTML_Syntax">HTML Syntax</a>
+      <a class="nav-link" href="#HTML_Declaration">HTML Declaration</a>
+      <a class="nav-link" href="#HTML_Semantic">HTML Semantic</a>
+      <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+      <a class="nav-link" href="#CSS_Properties">CSS Properties</a>
+      <a class="nav-link" href="#Link_HTML_and_CSS">Link HTML and CSS</a>
+      <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+    <header>
+    <main id="main-doc">
+
+      <section id="Introduction" class="main-section">
+        <header><h1>Introduction</h1></header>
+    <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+
+"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+    <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+
+CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.</p>
+      </section>
+
+      <section id="HTML_Syntax" class="main-section">
+        <header><h1>HTML Syntax</h1></header>
+        <p>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.<br>
+The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.<br>
+The content: This is the content of the element, which in this case, is just text.<br>
+The element: The opening tag, the closing tag, and the content together comprise the element.</p>
+<code>&lt;p&gt;Tomorrow will be a good day!&lt;p&gt;</code>
+      </section>
+
+      <section id="HTML_Declaration" class="main-section">
+        <header><h1>HTML Declaration</h1></header>
+          <p>n HTML, the doctype is the required "&lt;!DOCTYPE html&gt;" preamble found at the top of all documents. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document; that is, the "&lt;!DOCTYPE html&gt;" doctype ensures that the browser makes a best-effort attempt at following the relevant specifications, rather than using a different rendering mode that is incompatible with some specifications.</p>
+          <code>&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en-US"&gt;<br>&lt;/html&gt;</code>
+      </section>
+
+      <section id="HTML_Semantic" class="main-section">
+        <header><h1>HTML Semantic</h1></header>
+    <p>These are some of the roughly 100 semantic elements available. The most common ones are:</p>
+<code>
+&lt;aside>
+&lt;details>
+&lt;figcaption>
+&lt;figure>
+&lt;footer>
+&lt;header>
+&lt;main>
+&lt;mark>
+&lt;nav>
+&lt;section>
+&lt;summary>
+&lt;time>
+</code>
+      </section>
+
+      <section id="CSS_Selectors" class="main-section">
+        <header><h1>CSS Selectors</h1></header>
+    <ul>
+      <li>Attribute Selectors</li>
+      <p>The CSS attribute selector matches elements based on the presence or value of a given attribute.</p>
+      <code>/* "a" elements with a title attribute */<br>
+a[title] {
+  color: purple;
+}</code>
+      <li>Class Selectors</li>
+      <p>The CSS class selector matches elements based on the contents of their class attribute.</p>
+      <code>/* All elements with class="spacious" */<br>
+.spacious {
+  margin: 2em;
+}</code>
+      <li>ID Selectors</li>
+      <p>The CSS ID selector matches an element based on the value of the element's id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.</p>
+      <code>/* The element with id="demo" */<br>
+#demo {
+  border: red 2px solid;
+}</code>
+      <li>Type Selectors</li>
+      <p>The CSS type selector matches elements by node name. In other words, it selects all elements of the given type within a document.
+
+</p>
+      <code>/* All &lt;a&gt; elements. */<br>
+a {
+  color: red;
+}</code>
+      <li>Universal Selectors</li>
+      <p>The CSS universal selector (*) matches elements of any type.</p>
+      <code>/* Selects all elements */<br>
+* {
+  color: green;
+}</code>
+    </ul>
+    
+      </section>
+
+      <section id="CSS_Properties" class="main-section">
+        <header><h1>CSS Properties</h1></header>
+    <p>p is a selector in CSS (it points to the HTML element you want to style: p).
+color is a property, and red is the property value
+text-align is a property, and center is the property value
+</p>
+    <code>p {<br>
+  color: red;<br>
+  text-align: center;<br>
+}</code>
+      </section>
+
+      <section id="Link_HTML_and_CSS" class="main-section">
+        <header><h1>Link HTML and CSS</h1></header>
+    <p>Link to an external style sheet.</p>
+    <code>&lt;head&gt;<br>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+&lt;/head&gt;</code>
+      </section>
+
+      <section id="Reference" class="main-section">
+        <header><h1>Reference</h1></header>
+    <p>All the documentation from this page is taken from <a href="https://developer.mozilla.org/" target="_blank">MDN</a> and <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+      </section>
+    </main>
+    
+
+  </body>
+</html>
