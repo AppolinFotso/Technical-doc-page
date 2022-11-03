@@ -71,6 +71,7 @@ li {
   body {
   display: flex;
   flex-direction: column;
+   background-color: white;
 }
 
 #main-doc {
